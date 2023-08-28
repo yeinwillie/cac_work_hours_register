@@ -1,0 +1,38 @@
+# Ignorar archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de configuración local
+*.env
+*.sqlite3
+
+# Ignorar archivos de caché y temporales
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.bak
+*.swp
+
+# Ignorar archivos de configuración IDE
+.idea/
+.vscode/
+
+# Ignorar archivos de registro y archivos de error
+logs/
+*.log
+
+# Ignorar archivos de media y subidas de usuario (cambia a tu ubicación)
+media/
+uploads/
+
+# Ignorar archivos compilados o generados
+*.css.map
+*.js.map
+*.min.css
+*.min.js
+
+# Ignorar archivos de entorno virtual (cambia según tu sistema)
+venv/
+env/
