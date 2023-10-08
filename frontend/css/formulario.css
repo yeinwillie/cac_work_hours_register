@@ -1,0 +1,137 @@
+/* formulario */
+.formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+        
+  }
+  
+  textarea, input{
+    width: 100%; /*cambiar para ajustar a la pantalla*/
+    max-width: 300px; /*ayuda con la responsividad de los input y el textarea*/
+    padding: 6px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  
+  input:focus, textarea:focus{
+    border-bottom: 2px solid #5D5E61;
+  }
+  
+  textarea::-webkit-scrollbar{
+    width: .4rem;
+    
+  }
+  
+  textarea::-webkit-scrollbar-thumb{
+    background-color: #5D5E61;
+    border-radius: 5px;
+  }
+  
+  .formulario__input-error {
+    margin-top: 2px; 
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+  }
+  
+  .formulario__input-error-activo {
+    color: #d30d0d;
+    margin-top: 2px; 
+    font-size: 12px;
+    margin-bottom: 0;
+    display: block;
+  }
+  
+  .formulario__grupo-btn-enviar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+        
+  }
+  
+  .formulario__label{
+   cursor: pointer;
+  }
+  
+  .formulario__grupo-input{
+    position: relative;
+  }
+  
+  .formulario__validacion-estado {
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+  }
+  
+  .formulario__grupo_nombre  .formulario__validacion-estado{
+    right: 14px; /* Ajusta el valor según sea necesario */
+   
+  }
+  
+  .formulario__mensaje{
+    height: 20px;
+    line-height: 20px;
+    background-color: #f38181;
+    padding: 0 15px;
+    border-radius: 3px;
+    padding: 0;
+    margin-top: 0.3rem;
+    display: none;
+      
+  }
+  
+  .formulario__mensaje p{
+    margin: 0;
+    
+  }
+  
+  .formulario__mensaje-activo {
+    display: block;
+  }
+  
+  .formulario__mensaje-exito {
+    margin: 0 0 0;
+    font-size: 14px;
+    color: #119200;
+    display: none;
+  }
+  
+  .formulario__mensaje-exito-activo {
+    
+    display: block;
+  }
+  
+  .formulario__btn {
+    margin-top: 0.5rem;
+    width: 35%;   
+    padding: .1rem; 
+  }
+  
+  /*Estilos para validar campos*/
+  
+  .formulario__grupo-correcto .formulario__validacion-estado{
+    color: #1ED12D;
+    opacity: 1;
+  }
+  
+  .formulario__grupo-incorrecto .formulario__label{
+    color: #d30d0d;
+    
+  }
+  
+  .formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: #d30d0d;
+    opacity: 1;
+    
+  }
+  

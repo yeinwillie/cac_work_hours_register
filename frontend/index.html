@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/70de63367c.js" crossorigin="anonymous"></script>   
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/formulario.css">
+    <script async src="./JS/app.js"></script>
+    <title>CAC Horas de trabajo</title>
+    
+</head>
+<body>
+
+<!--Section Menu-->
+    
+    <header class="head">
+        
+        <a href="#" class="logo"><img src="./Issues/logo_nombre.png" alt="logo" height="80px" width="90px"></a>
+        
+        <button class="btn_hamburger">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </button>
+          
+          <nav class="head_nav">
+            <ul class="head_nav_ul">
+              <li class="head_nav_ul_li" id="navInicio"><a href="#inicio">Inicio</a></li>             
+              <li class="head_nav_ul_li" id="navContactame"><a href="#contactame">Contacto</a></li>
+              <li class="head_nav_ul_li" id="navLogin"><a href="#login">Login</a></li>             
+              <li class="head_nav_ul_li" id="navRegistro"><a href="#registro">Registro</a></li>
+            </ul>
+          </nav>    
+        
+    </header>
+
+    <main>
+
+ <!--Section Banner-->
+
+        <section class="inicio" id="inicio">  
+            <article class="inicio_article">
+                <h1 class="titulo">
+                       Banner
+                </h1>      
+                <img height="300px" width="100%" src="./issues/craiyon_093953_A_group_of_business_people_gathered_together__celebrating_in_front_of_a_whiteboard_fu.png" alt="">                     
+               
+            </article>           
+
+<!--Section Benificios-->      
+
+        </section>
+
+        <section  id="Beneficios">
+
+            <h2 class="beneficios">Con nosotros podes</h2>
+
+            <img width="250px" src="./issues/craiyon_093222_logo_entreprise.png" alt="" >
+            <h2 class="beneficios">Ingresar horas a trabaja</h2>
+
+            
+            <img width="250px" src="./issues//craiyon_092457_Calendar_icon.png" alt="" >
+
+            <h2 class="beneficios">Registro semanal / mensual</h2>
+
+            <img width="250px" src="./issues/craiyon_093743_graphic_with_financial_rating_bars_and_a_pie_chart.png" alt="">
+            
+            <h2 class="beneficios">Control de horas trabajadas</h2>
+           
+        </section>
+
+<!--Section Contactame-->
+
+        <section class="contactame" id="contactame">
+           
+            <div class="contactame_parrafo">
+                <h2>
+                    Contactame! 
+                </h2>
+
+                <form action="" class="formulario" id="formulario">
+                
+                    <!--Grupo Nombre-->
+                    <div class="formulario__grupo formulario__grupo_nombre" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre:</label>            
+                        <div class="formulario__grupo-input" >                
+                            <input name="nombre" type="text" placeholder="Escribir nombre" id="nombre" class="formulario-input" style="width:500px">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark fa-lg"></i>
+                        </div>
+                        <p class="formulario__input-error">El nombre no puede tener número o caracteres especiales</p>
+                    </div>
+                    
+                    <!--Grupo Email-->
+                    <div class="formulario__grupo" id="grupo__email">
+                        <label for="email" class="formulario__label">Email:</label>            
+                        <div class="formulario__grupo-input">                
+                            <input name="email" type="email" placeholder="Escribe tu email" id="email" class="formulario-input" style="width:500px">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark fa-lg"></i>
+                        </div>
+                        <p class="formulario__input-error">El email no es valido</p>
+                    </div>
+
+                    <!--Grupo Mensaje-->
+                    <div class="formulario__grupo" id="grupo__mensaje">
+                        <label for="mensaje" class="formulario__label">Mensaje:</label>            
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="8" class="textarea" placeholder="Escribe tu mensaje" ></textarea>
+                        <p class="formulario__input-error">No olvides escribir tu mensaje</p>
+                    </div>                       
+                
+                
+                    <!--Boton-->
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn inicio_link_btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"> Mensaje enviado exitosamente!</p>
+                    </div>
+                    
+                    <!--Mensaje de error-->
+                    
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p> <i class="fa-solid fa-triangle-exclamation fa-sm"></i><b> Error:</b> Hay campos por corregir</p>
+                    </div>
+
+
+                </form>     
+                           
+
+            </div> 
+        </section>
+
+    </main>
+
+<!--Section Footer-->
+
+    <footer class="footer">
+        <div class="icons" id="icons">
+            <a href="https://www.linkedin.com/in/yein-e-734a7a233" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl" style="color: #050505;"></i></a>
+            <a href="mailto:yeinneg@gmail.com"><i class="fa-solid fa-envelope fa-2xl icon" style="color: #050505;"></i></a>
+            <a href="https://github.com/yeinwillie" target="_blank"><i class="fa-brands fa-github fa-2xl icon" style="color: #050505;"></i></a>
+       </div>  
+            <a href="#inicio" class="footer_link">Ir a Inicio</a>
+    </footer>   
+
+</body>
+</html>
