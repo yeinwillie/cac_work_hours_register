@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./css/formulario.css">
-    <script async src="./JS/app.js"></script>
+    <link rel="stylesheet" href="./css/footer.css">
+    <script async src="./js/formulario.js"></script>
     <title>CAC Horas de trabajo</title>
     
 </head>
@@ -74,16 +75,20 @@
 
 <!--Section Contactame-->
 
-        <section class="contactame" id="contactame">
+        <section class="contactanos" id="contactame">
            
             <div class="contactame_parrafo">
-                <h2>
-                    Contactame! 
-                </h2>
+                <div class="contactame_parrafo_Centro">
+                    <h2>
+                        Contactame! 
+                    </h2>
+                </div>
+               
 
                 <form action="" class="formulario" id="formulario">
                 
-                    <!--Grupo Nombre-->
+                    <div class="formulario_inputs">
+                         <!--Grupo Nombre-->
                     <div class="formulario__grupo formulario__grupo_nombre" id="grupo__nombre">
                         <label for="nombre" class="formulario__label">Nombre:</label>            
                         <div class="formulario__grupo-input" >                
@@ -123,6 +128,9 @@
                         <p> <i class="fa-solid fa-triangle-exclamation fa-sm"></i><b> Error:</b> Hay campos por corregir</p>
                     </div>
 
+                    </div>
+                   
+
 
                 </form>     
                            
@@ -134,14 +142,21 @@
 
 <!--Section Footer-->
 
-    <footer class="footer">
-        <div class="icons" id="icons">
-            <a href="https://www.linkedin.com/in/yein-e-734a7a233" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl" style="color: #050505;"></i></a>
-            <a href="mailto:yeinneg@gmail.com"><i class="fa-solid fa-envelope fa-2xl icon" style="color: #050505;"></i></a>
-            <a href="https://github.com/yeinwillie" target="_blank"><i class="fa-brands fa-github fa-2xl icon" style="color: #050505;"></i></a>
-       </div>  
-            <a href="#inicio" class="footer_link">Ir a Inicio</a>
-    </footer>   
+<footer>
+    <div class="footer-left">
+        <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Team</a></li>
+        </ul>
+    </div>
+    <div class="footer-right">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+</footer>
 
 </body>
 </html>

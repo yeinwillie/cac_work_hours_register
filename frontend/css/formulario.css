@@ -6,6 +6,13 @@
     justify-content: center;
         
   }
+
+  .formulario_inputs{
+    border: 1px solid #ccc; /* Borde con color gris claro */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.3); /* Sombra suave azul */
+    padding: 25px; 
+  }
   
   textarea, input{
     width: 100%; /*cambiar para ajustar a la pantalla*/
@@ -110,13 +117,38 @@
     
     display: block;
   }
-  
+
   .formulario__btn {
-    margin-top: 0.5rem;
-    width: 35%;   
-    padding: .1rem; 
+    box-shadow:inset 0px 1px 14px 0px #97c4fe;
+    background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+    background-color:#3d94f6;
+    border-radius:6px;
+    border:2px solid #337fed;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:9px 40px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #1570cd;
+    margin-top: 1rem;
   }
+  .formulario__btn:hover {
+    background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+    background-color:#1e62d0;
+  }
+  .formulario__btn:active {
+    position:relative;
+    top:1px;
+  } 
   
+
+  .contactame_parrafo_Centro {
+    text-align: center;
+  }
+
   /*Estilos para validar campos*/
   
   .formulario__grupo-correcto .formulario__validacion-estado{
