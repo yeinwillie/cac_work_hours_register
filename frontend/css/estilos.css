@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 3rem;
   }
   
   #blog .contenedor img{
@@ -18,7 +19,7 @@
   }
   h2, h4 {
     text-align: center;
-  
+    margin-bottom: 0.5rem;
   }
   #blog img {
     width: 100%;
@@ -40,8 +41,18 @@ footer .contenedor {
  
   footer .icons {
     margin-top: 20px;
-     align-items: center
+     align-items: center;
+         
   }
+
+  .icon_ancla{
+    margin-left: 3rem;
+  }
+
+  .footer_link {
+    margin-top: 1rem;
+    text-align: center;
+}
 
 @media screen and (min-width:1024px){
     section {
