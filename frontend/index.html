@@ -8,7 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
    
     <link rel="stylesheet" href="./css/formulario.css">
-    <script async src="./JS/app.js"></script>
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/navBar.css">
+    <script async src="./js/formulario.js"></script>
+    <script async src="./js/navBar.js"></script>
+
     <title>CAC Horas de trabajo</title>
     <link rel="stylesheet" href="./css/estilos.css">
     
@@ -19,7 +23,7 @@
     
     <header class="head">
         
-        <a href="#" class="logo"><img src="./Issues/logo_nombre.png" alt="logo" height="80px" width="90px"></a>
+        <a href="#" class="logo"><img src="./Issues/logocac.png" alt="logo" height="100px" width="100px"></a>
         
         <button class="btn_hamburger">
             <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -73,16 +77,20 @@
 
        <!--Section Contactame-->
 
-        <section class="contactame" id="contactame">
+        <section class="contactanos" id="contactame">
            
             <div class="contactame_parrafo">
-                <h2>
-                    Contactame! 
-                </h2>
+                <div class="contactame_parrafo_Centro">
+                    <h2>
+                        Contactame! 
+                    </h2>
+                </div>
+               
 
                 <form action="" class="formulario" id="formulario">
                 
-                    <!--Grupo Nombre-->
+                    <div class="formulario_inputs">
+                         <!--Grupo Nombre-->
                     <div class="formulario__grupo formulario__grupo_nombre" id="grupo__nombre">
                         <label for="nombre" class="formulario__label">Nombre:</label>            
                         <div class="formulario__grupo-input" >                
@@ -122,6 +130,9 @@
                         <p> <i class="fa-solid fa-triangle-exclamation fa-sm"></i><b> Error:</b> Hay campos por corregir</p>
                     </div>
 
+                    </div>
+                   
+
 
                 </form>     
                            
@@ -132,6 +143,7 @@
     </main>
 
 <!--Section Footer-->
+
 <br>
 <br>
     <footer id="footer">
