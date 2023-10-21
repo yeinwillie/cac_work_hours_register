@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-top: 3rem;
         
   }
 
@@ -147,6 +148,7 @@
 
   .contactame_parrafo_Centro {
     text-align: center;
+    margin-top: 3rem;
   }
 
   /*Estilos para validar campos*/
