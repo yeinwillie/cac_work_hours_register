@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/70de63367c.js" crossorigin="anonymous"></script>   
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+          <!-- BOOSTRAP CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+  <!-- Toastify CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
    
     <link rel="stylesheet" href="./css/formulario.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/navBar.css">
     <script async src="./js/formulario.js"></script>
     <script async src="./js/navBar.js"></script>
@@ -35,8 +41,9 @@
             <ul class="head_nav_ul">
               <li class="head_nav_ul_li" id="navInicio"><a href="#inicio">Inicio</a></li>             
               <li class="head_nav_ul_li" id="navContactame"><a href="#contactame">Contacto</a></li>
-              <li class="head_nav_ul_li" id="navLogin"><a href="#login">Login</a></li>             
-              <li class="head_nav_ul_li" id="navRegistro"><a href="#registro">Registro</a></li>
+              <li class="head_nav_ul_li logged-out" id="navLogin"><a href="#login" data-bs-toggle="modal" data-bs-target="#signinModal">Login</a></li>             
+              <li class="head_nav_ul_li logged-out" id="navRegistro"><a href="#registro" data-bs-toggle="modal" data-bs-target="#signupModal">Registro</a></li>
+              <a class=" head_nav_ul_li nav-link logged-in" href="#" id="logout">Logout</a>
             </ul>
           </nav>    
         
@@ -159,6 +166,63 @@
     </div>
          
     </footer>   
+
+    <!-- Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-white">
+      <div class="modal-header">
+        <h3 class="mb-2">Registrarse</h3>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-3">
+        <form id="signup-form">
+
+          <label for="email">Email:</label>
+          <input type="text" id="signup-email" class="form-control mb-3" placeholder="Ingresa tu correo" required>
+
+          <label for="password">Contraseña:</label>
+          <input type="password" id="signup-password" class="form-control mb-3" placeholder="Ingresa tu contraseña" required>
+
+          <button type="submit" class="btn btn-primary">Guardar cambios</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalSignin"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Login</h3>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="login-form">
+          <label for="email">Email</label>
+          <input type="text" id="login-email" class="form-control mb-3" placeholder="Ingresa tu correo" required>
+          <label for="password">Password:</label>
+          <input type="password" id="login-password" class="form-control mb-3" placeholder="Ingresa tu contraseña" required>
+
+          <button type="submit" class="btn btn-success w-100 mb-4">Login</button>
+          <button type="button" class="btn btn-info" id="googleLogin">Google</button>            
+         
+          
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Toastify js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./app/main.js" type="module"></script>
+
 
 </body>
 </html>
