@@ -5,11 +5,26 @@
   height: 100%;
 }
 
+.banner2{
+margin-top: 60px;
+}
+
 #blog .contenedor{
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     flex-wrap: wrap;
     margin-top: 3rem;
+  }
+
+  .beneficios_imagen{
+    margin-top: 1rem;
+    
+  }
+
+  .contenedor_beneficios{
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+   
   }
   
   #blog .contenedor img{
@@ -73,5 +88,6 @@ footer .contenedor {
     }
     .jornada {
       display: block;
+      margin-top: 90px;
     }
   }

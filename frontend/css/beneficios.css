@@ -1,0 +1,88 @@
+/* Botones */
+.Boton-modal {
+    padding: 40px;
+    width: auto;
+}
+
+.Boton-modal label {
+    background-color: gold;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Boton-modal label:hover {
+    background-color: rgb(206, 175, 0);
+}
+
+/* Ventanas Modales */
+input[type="checkbox"] {
+    display: none;
+}
+
+.container-modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+input[type="checkbox"]:checked ~ .container-modal {
+    display: flex;
+}
+
+.content-modal {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.content-modal h2 {
+    margin-bottom: 15px;
+}
+
+.content-modal p {
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.btn-cerrar {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-cerrar label {
+    padding: 7px 10px;
+    background-color: gold;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cerrar label:hover {
+    background-color: rgb(206, 175, 0);
+}
+
+.cerrar-modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8); 
+    z-index: -1;
+}
