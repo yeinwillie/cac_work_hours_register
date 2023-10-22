@@ -26,7 +26,7 @@ const navContactame = document.querySelector('#navContactame');
 
 
 navInicio.addEventListener('click', cerrarMenu); 
-navProyectos.addEventListener('click', cerrarMenu); 
+//navProyectos.addEventListener('click', cerrarMenu); 
 navContactame.addEventListener('click', cerrarMenu); 
 
 function cerrarMenu (){ 
